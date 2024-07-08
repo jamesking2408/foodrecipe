@@ -1,0 +1,142 @@
+@import url(./fonts/Young_Serif/YoungSerif-Regular.css);
+@import url(./fonts/outfit/outfit.css);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(243 229 216);
+}
+
+.container {
+    margin: 10rem auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 750px;
+}
+
+@media screen and (max-width:425px) {
+    .container {
+        margin: 0;
+        padding: 20px;
+        border-radius: 0;
+    }
+}
+
+.recipeImg {
+    max-width: 100%;
+
+    & img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+}
+
+.recipeTitle {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.45rem;
+    margin: 15px 0px;
+}
+
+p,li,div {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    color: rgb(102, 64, 34);
+}
+
+.recipePara {
+    font-size: 16px;
+}
+
+.rectCard {
+    background-color: rgb(255 247 252);
+    padding: 1px 15px;
+    border-radius: 10px;
+
+    & .cardTitle {
+        color: rgb(151 62 117);
+        font-size: 1.283rem;
+        font-weight: 600;
+    }
+
+    & .cardTitle+ul li {
+        margin: 0px 0px 12px 0px;
+        padding-left: 15px;
+
+        & span {
+            color: #464036;
+            font-size: 17px;
+            font-weight: 600;
+        }
+    }
+
+    & .cardTitle+ul li::marker {
+        color: rgb(151 62 117);
+    }
+}
+
+.subTitle {
+    color: #8f5d02;
+    font-size: 2.2599rem;
+    margin: 15px 0px;
+
+    &+ol,+ul {
+        margin-left: -10px;
+    }
+}
+
+.subTitle+ul li,
+.subTitle+ol li {
+    margin: 0px 0px 12px 0px;
+    padding-left: 15px;
+    & span {
+        color: #464036;
+        font-size: 17px;
+        font-weight: 600;
+    }
+}
+
+.subTitle+ol li {
+    color: #8f5d02;
+}
+
+.subTitle+ol li::marker {
+    color: rgb(151 62 117);
+    font-size: 1.198rem;
+    font-weight: 600;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+}
+
+.col-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.pad-xy {
+    padding: 10px 16px
+}
+
+.pad-left {
+    padding-left: 1.689rem;
+}
+
+.txt-secondary {
+    color: #8f5d02;
+    font-weight: 800;
+}
